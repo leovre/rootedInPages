@@ -82,4 +82,16 @@ router.post('/writeblog/new', async (req, res, next) => {
     }
 })
 
+router.delete('/blogs/:id', async (req, res, next) => {
+    try {
+        console.log(req.params.id)
+        const blogDelete = await Blogs.findByIdAndDelete(req.params.id)
+        
+        res.redirect('/blogs')
+    } catch (err) {
+        console.log(err)
+        return next();
+    }
+})
+
 module.exports = router;

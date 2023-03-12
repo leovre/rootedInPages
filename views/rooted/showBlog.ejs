@@ -2,10 +2,19 @@
 <div class="onlyOne">
 <h3><%=blog.title%></h3>
     <div class="wrap">  
-        <img src="<%=blog.image%>" alt="">
-
+        <img src="<%=blog.image%>" alt="book pic">
         <p><%=blog.text%></p>
     </div>
+</div>
+
+<div class="options">
+    <button>
+        <a href="/blogs/<%=blog._id%>/edit">Edit blog</a>
+    </button>
+
+    <form method="POST" action="/blogs/<%= blog._id %>?_method=DELETE">
+        <input type="submit" value="Delete Blog">
+    </form>
 </div>
 
 <%- include('../partials/footer') %>

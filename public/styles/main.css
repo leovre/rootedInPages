@@ -40,6 +40,7 @@ a:hover{
 .onlyOne{
     display:flex;
     flex-direction: column;
+
 }
 
 .onlyOne h3{
@@ -48,28 +49,44 @@ text-align: center;
 }
 
 .onlyOne img{
-    height: 12em;
-    
+    height: 10em;
+   flex-wrap: wrap;
+}
+
+.wrap {
+display:flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 1.5em 5em;
+gap:2em;
 }
 
 .onlyOne p{
+    text-align:justify;
+    display: flex;
     font-size: 1.2em;
-    width: 50%;
-    float: none;
+   flex-wrap: wrap;
 }
 
-.wrap{
-   display:flex;
-    /* flex-wrap: wrap-reverse; */
-    justify-content: center;
-    gap:2em;
-    width: 100%;
-    float: left;
-}
+
 
 form{
     text-align: center;
 }
+
+.options{
+    display:flex;
+    text-align: center;
+    gap:3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.options input:hover{
+    text-decoration:underline;
+}
+
 div #text{
     height:10em;
     width:45em;
