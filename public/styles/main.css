@@ -48,13 +48,14 @@ text-align: center;
 }
 
 .onlyOne img{
-  
     height: 12em;
-
+    
 }
 
 .onlyOne p{
     font-size: 1.2em;
+    width: 50%;
+    float: none;
 }
 
 .wrap{
@@ -62,7 +63,8 @@ text-align: center;
     /* flex-wrap: wrap-reverse; */
     justify-content: center;
     gap:2em;
-    margin: 1.5em 15em;
+    width: 100%;
+    float: left;
 }
 
 form{
