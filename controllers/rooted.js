@@ -7,7 +7,7 @@ let mySeedData = [
     {
         title:'Rooted',
         image:'https://jesusculture.com/wp-content/themes/jesus-culture-v2/rootedbook/images/share-images/3.jpg',
-        text: 'This book is about becoming rooted in the word of God'
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Vel pharetra vel turpis nunc eget lorem dolor sed. Metus dictum at tempor commodo ullamcorper. Fames ac turpis egestas integer eget. Euismod nisi porta lorem mollis aliquam ut. Arcu dictum varius duis at. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Sagittis id consectetur purus ut faucibus pulvinar elementum. Laoreet id donec ultrices tincidunt arcu non. Convallis posuere morbi leo urna molestie. Fermentum leo vel orci porta. Ante in nibh mauris cursus mattis molestie a. Nec ullamcorper sit amet risus nullam eget felis.'
     }
 ]
 

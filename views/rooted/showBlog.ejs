@@ -1,11 +1,11 @@
 <%- include('../partials/header', {styleSheet: '../styles/main.css' }) %>
 <div class="onlyOne">
 <h3><%=blog.title%></h3>
+    <div class="wrap">  
+        <img src="<%=blog.image%>" alt="">
 
-<img src="<%=blog.image%>" alt="">
-
-<p><%=blog.text%></p>
-
+        <p><%=blog.text%></p>
+    </div>
 </div>
 
 <%- include('../partials/footer') %>

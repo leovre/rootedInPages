@@ -38,19 +38,31 @@ a:hover{
 }
 
 .onlyOne{
-    text-align: center;
+    display:flex;
+    flex-direction: column;
 }
 
 .onlyOne h3{
 font-size: 2.5em;
+text-align: center;
 }
 
 .onlyOne img{
-    height: 35em;
+  
+    height: 12em;
+
 }
 
 .onlyOne p{
     font-size: 1.2em;
+}
+
+.wrap{
+   display:flex;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+    gap:2em;
+    margin: 1.5em 15em;
 }
 
 form{
