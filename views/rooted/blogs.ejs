@@ -2,4 +2,13 @@
 
 <h1>Here you can see me talking about my books</h1>
 
+<%for(let i = 0; i < blog.length; i++){ %>
+
+    <div class='blogPost'>
+        <h3><%=blog[i].title%></h3>
+        <img src="<%=blog[i].image%>" alt="">
+    </div>
+
+<%}%>
+
 <%- include('../partials/footer') %>

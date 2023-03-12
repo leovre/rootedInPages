@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express();
 const path = require('path');
+const mongo = require('./config/connection')
 const { rooted } = require('./controllers');
-
+const methodOverride = require('method-override')
 app.set('views', path.join(__dirname, 'views'))
 
 app.set('view engine', 'ejs');

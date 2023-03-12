@@ -1,0 +1,23 @@
+<%- include('../partials/header', {styleSheet: 'styles/main.css' }) %>
+
+    <h1>Write A Blog!</h1>
+
+    <form action="/writeblog/new" method="POST">
+        <div>
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title">
+        </div>
+        <div>
+            <label for="image">Enter a URL image of the book</label> <br>
+            <input type="text" name="image" id="image">
+        </div>
+        <div>
+            <label for="text">Write your blog:</label> <br>
+            <textarea name="text" id="text" cols="30" rows="10"> </textarea>
+            <!-- <input type="text" name="text" id="text"> -->
+        </div>
+        <input type="submit" value="Post Blog">
+    </form>
+
+
+<%- include('../partials/footer') %>

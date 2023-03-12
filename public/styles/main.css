@@ -25,6 +25,37 @@ a:hover{
     text-decoration: underline;
 }
 
+.blogPost{
+    text-align: center;
+}
+
+.blogPost h3{
+    font-size:2.5em;
+}
+
+.blogPost img{
+    height: 35em;
+}
+
+form{
+    text-align: center;
+}
+div #text{
+    height:10em;
+    width:45em;
+}
+
+div #image{
+width: 35em;
+height: 2em;
+}
+
+div #title{
+width: 35em;
+height: 2em;
+}
+
+
 footer{
     text-align: center;
 }
