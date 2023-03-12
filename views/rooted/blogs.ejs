@@ -5,8 +5,10 @@
 <%for(let i = 0; i < blog.length; i++){ %>
 
     <div class='blogPost'>
-        <h3><%=blog[i].title%></h3>
-        <img src="<%=blog[i].image%>" alt="">
+        <a href="/blogs/<%= blog[i]._id%>">
+            <h3><%=blog[i].title%></h3>
+            <img src="<%=blog[i].image%>" alt="">
+        </a>
     </div>
 
 <%}%>

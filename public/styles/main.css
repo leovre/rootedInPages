@@ -37,6 +37,22 @@ a:hover{
     height: 35em;
 }
 
+.onlyOne{
+    text-align: center;
+}
+
+.onlyOne h3{
+font-size: 2.5em;
+}
+
+.onlyOne img{
+    height: 35em;
+}
+
+.onlyOne p{
+    font-size: 1.2em;
+}
+
 form{
     text-align: center;
 }

@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { Blogs }= require('../models')
 
+router.use(express.static('public'))
 let mySeedData = [
     {
         title:'Rooted',
@@ -46,9 +47,20 @@ router.get('/join' ,(req, res, next) => {
 try{
     res.render('rooted/join.ejs')
 } catch(err) {
-    console.log(err)
+    console.log(err);
     return next();
 }
+})
+
+router.get('/blogs/:id', async(req,res, next) => {
+    try {
+        // console.log(req.params.id)
+        const showBlog = await Blogs.findById(req.params.id);
+        res.render('rooted/showBlog.ejs', {blog: showBlog})
+    } catch (err) {
+        console.log(err);
+        return next();
+    }
 })
 
 router.get('/writeblog' ,(req, res, next) => {
