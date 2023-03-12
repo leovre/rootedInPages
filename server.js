@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
-const path = require('path')
+const path = require('path');
+const { rooted } = require('./controllers');
 
 app.set('views', path.join(__dirname, 'views'))
 
@@ -17,7 +18,13 @@ app.get('/', (req, res) => {
 
 
 
+app.use('', rooted)
 
-app.listen(4000, () => {
-    console.log('listening on port 4000')
+
+app.get('/*', (req, res) => {
+    res.render('404')
+})
+
+app.listen(3000, () => {
+    console.log('listening on port 3000')
 })
